@@ -1,11 +1,11 @@
-﻿using System;
+﻿//using System;
 
-namespace Classes;
+//namespace Classes;
 
-public class Student
-{
-    private string Name;
-    private int StudentId;
-    private int NumberOfCredits;
-    private double Gpa;
-}
+//public class Student
+//{
+//    private string Name;
+//    private int StudentId;
+//    private int NumberOfCredits;
+//    private double Gpa;
+//}

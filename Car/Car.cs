@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Car
+namespace CarNamespace
 {
 	public class Car
 	{
