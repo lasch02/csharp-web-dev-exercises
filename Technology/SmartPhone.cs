@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    public class SmartPhone
+    public class SmartPhone : Computer
     {
+        public bool HasCamera { get; set; } = true;
+
+        public SmartPhone(double ram, double screenSize, string oS) : base(ram, screenSize, oS)
+        {
+        }
+
+        public void DropPhone()
+        {
+            HasCamera = false;
+        }
     }
 }

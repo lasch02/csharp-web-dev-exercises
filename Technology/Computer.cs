@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    public class Computer
+    public class Computer : AbstractEntity
     {
         public double Ram { get; set; }
         public readonly double Screensize;
         public string OS { get; set; }
 
-    public Computer(double ram, double screenSize, string oS)
+        public Computer(double ram, double screenSize, string oS) : base()
         {
             Ram = ram;
             Screensize = screenSize;
@@ -25,9 +25,9 @@ namespace Technology
             Console.WriteLine($"RAM: {Ram}{Environment.NewLine}" + $"Screensize: {Screensize}{Environment.NewLine}" + $"OS: {OS}");
         }
 
-        public void UpgradeRam(double Ram) 
+        public void UpgradeRam(double uRam) 
         {
-            Ram += uRam
+            Ram += uRam;
         }
 
     }
