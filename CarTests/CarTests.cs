@@ -1,4 +1,4 @@
-﻿using Car;
+﻿using CarNamespace;
 
 namespace CarTests;
 
@@ -24,7 +24,7 @@ public class CarTests
     [TestMethod]
     public void TestInitialGasTank()
     {
-        Car test_car = new Car("Toyota", "Prius", 10, 50);
+        //Car test_car = new Car("Toyota", "Prius", 10, 50);
         Assert.AreEqual(10, test_car.GasTankLevel, .001);
     }
 
